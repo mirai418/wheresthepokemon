@@ -180,79 +180,6 @@ h2{
 }
 
 /*-------------------------------------------------------------*/
-/* LOGIN */
-
-#background{
-  width: inherit;
-  height: inherit;
-}
-
-.login{
-  width: 480px;
-  height: 240px;
-  position: fixed;
-  top: 45%;
-  left: 50%;
-  margin-top: -120px;
-  margin-left: -240px;
-  border: 1px solid #a0a0a0;
-}
-
-.login #logo{
-  text-align: center;
-  margin: 40px 120px;
-}
-
-#login form{
-  margin: 30px;
-}
-
-.login input{
-  margin: 5px;
-}
-
-.login .login-message{
-  color: #666;
-  text-align: center;
-  margin-top: 15px;
-  font-size: 11px;
-}
-
-.login .error-true{
-  color: #a60000;
-  font-size: 13px;
-}
-
-.login a{
-  text-align: center;
-  margin-top: 15px;
-  display: block;
-  color: #777;
-}
-
-.login a:hover{
-  color: #bbb;
-}
-
-#register form{
-  margin: 15px;
-}
-
-#register h2{
-  margin: 20px auto;
-  text-align: center;
-}
-
-#register .error{
-  color: #a60000;
-}
-
-.center{
-  text-align: center;
-  margin: 30px;
-}
-
-/*-------------------------------------------------------------*/
 /* MAIN */
 
 #title{
@@ -265,7 +192,6 @@ h2{
   width: 800px;
   height: 100%;
   margin: 0 auto;
-  background-color: #f8f8f8;
 }
 
 .main-contents{
@@ -275,89 +201,11 @@ h2{
   float: right;
 }
 
-.side-bar{
-  width: 200px;
-  margin: 0 auto;
-  padding: 0px 0px;
-  float: left;
+#header{
+  margin: 40px;
 }
 
-.side-bar h4{
-  margin-top: 20px;
-  font-size: 20px;
-}
-
-.side-bar #other-users{
-  margin: 10px 0px;
-}
-
-.side-bar .user{
-  font-size: 16px;
-  word-wrap: break-word;
-  padding: 5px;
-  background-color: rgba(0,0,255, 0.1);
-  margin: 1px;
-}
-
-.side-bar .me{
-  background-color: rgba(0,255,0, 0.2);  
-}
-
-.main-contents h2{
-  margin-bottom: 10px;
-}
-
-.main-contents .logout{
-  margin-bottom: 30px;
-  color: #a0a0a0;
-}
-
-.main-contents .logout:hover{
-  color: #d0d0d0;
-}
-
-.main-contents form{
-  width: 520px;
-  margin: 20px;
-}
-
-.main-contents form p{
-  margin-bottom: 10px;
-}
-
-.main-contents form textarea{
-  width: 506px;
-  min-height: 40px;
-  background-color: #fff;
-}
-
-.main-contents form input{
-  margin: 5px 0px;
-}
-
-#posts{
-  margin: 20px 0px;
-}
-
-#posts .post{
-  padding-bottom: 30px;
-}
-
-#posts .photo{
-  width: 540px;
-  margin: 10px;
-}
-
-#posts p{
-  font-size: 18px;
-  margin-bottom: 5px;
-  background-color: #f0f0f0;
-  padding: 15px;
-}
-
-#posts h6{
-  font-size: 14px;
-  margin-right: 5px;
-  font-style: italic;
+#header h2{
+  font-size: 48px;
 }
 
