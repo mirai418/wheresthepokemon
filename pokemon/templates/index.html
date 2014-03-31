@@ -19,10 +19,10 @@
 			<h1><a href="{% url 'home' %}">Where's the POKEMON?</a></h1>
 		</div>
 
-		<form id="submit">
+		<form method="post" id="submit" action="{% url 'home' %}">{% csrf_token %}
 			<h2>Help us out by submitting your own!</h2>
-			<input type="text" placeholder="name">
-			<input type="text" placeholder="link">
+			<input name="name" type="text" placeholder="name">
+			<input name="link" type="text" placeholder="link">
 			<input type="submit" value="submit">
 		</form>
 
