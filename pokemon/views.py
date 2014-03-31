@@ -5,7 +5,7 @@ from django.shortcuts import *
 
 def home(request):
     if request.method == "GET":
-        p = Pokemon.objects.all()
+        p = Pokemon.objects.all().order_by("-vote")
         context = dict()
         context['all_pokemon'] = p
         return render(request, 'index.html', context)

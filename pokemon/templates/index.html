@@ -26,25 +26,25 @@
 			<input type="submit" value="submit">
 		</form>
 
-		<div id="submit">
-
-			<form>
-
-			</form>
-
-		</div>
-
 		<div id="all-pokemons">
 			{% for pokemon in all_pokemon %}
 
-			<div class="pokemon">
-				<h3>
-					<a href="{{pokemon.link}}">{{pokemon.name}}</a>
-				</h3>
-				<p>
-					Link: <a href="{{pokemon.link}}">{{pokemon.link}}</a>
-				</p>
+			<div>
+				<div class="rating clearfix">
+					<div class="triangle-up"></div>
+					<div class="rate">{{pokemon.vote}}</div>
+					<div class="triangle-down"></div>
+				</div>
+				<div class="pokemon clearfix">
+					<h3>
+						<a target="_blank" href="{{pokemon.link}}">{{pokemon.name}}</a>
+					</h3>
+					<p>
+						Link: <a target="_blank" href="{{pokemon.link}}">{{pokemon.link}}</a>
+					</p>
+				</div>
 			</div>
+
 
 
 			{% endfor%}
