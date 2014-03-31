@@ -65,7 +65,7 @@ input{
 
 input[type="text"], input[type="email"], input[type="password"], input[type="tel"], textarea{
   height: 24px;
-  width: 138px;
+  width: 180px;
   font-size: 14px;
   background-color: #f8f8f8;
   border: 1px solid #d0d0d0;
@@ -74,6 +74,23 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
   line-height: 17px;
   color: black;
 }
+
+@media all and (max-width: 699px){
+
+  input[type="text"], input[type="email"], input[type="password"], input[type="tel"], textarea{
+    height: 40px;
+    width: 298px;
+    font-size: 16px;
+    background-color: #f8f8f8;
+    border: 1px solid #d0d0d0;
+    padding: 0px 6px;
+    font-weight: 300;
+    line-height: 20px;
+    color: black;
+  }
+
+}
+
 
 textarea{
   min-height: 160px;
@@ -111,6 +128,22 @@ textarea:focus, input[type="text"]:focus, input[type="email"]:focus, input[type=
   line-height: 20px;
   font-size: 13px;
   min-width: 80px;
+}
+
+@media all and (max-width: 699px){ 
+
+  input[type="submit"]{
+    font-weight: 300;
+    margin: 5px;
+    padding: 0px 12px;
+    height: 40px;
+    line-height: 20px;
+    font-size: 20px;
+    width: 120px;
+    float: right;
+    border-radius: 1px;
+  }
+
 }
 
 .button:hover, input[type="submit"]:hover{
@@ -254,7 +287,19 @@ input[type="checkbox"]:checked + .modal-contents{
 }
 
 #submit{
-  margin: 40px;
+  margin: 20px 0px;
+  padding: 20px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #a0a0a0;
+}
+
+@media all and (max-width: 699px){
+
+  #submit{
+    padding: 0px;
+    margin: 20px 0px;
+  }
+
 }
 
 #submit h2{
@@ -284,7 +329,7 @@ input[type="checkbox"]:checked + .modal-contents{
   float: left;
   margin: 0px 10px;
   margin-top: 10px;
-  height: 30px;
+  height: 40px;
 }
 
 .pokemon p{
