@@ -14,5 +14,13 @@ def home(request):
 		try:
 			name = request.POST["name"]
 			link = request.POST["link"]
+		except:
+			context['all_pokemon'] = p
+			return render(request, 'index.html', context)
+		if (name != "" and link != ""):
+			Pokemon.objects.create(name=name, link=link)
+		p = Pokemon.objects.all().order_by("-vote")
+		context['all_pokemon'] = p
 		return render(request, 'index.html', context)
+
 
