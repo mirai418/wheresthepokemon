@@ -31,9 +31,13 @@
 
 			<div>
 				<div class="rating clearfix">
-					<div class="triangle-up"></div>
-					<div class="rate">{{pokemon.vote}}</div>
-					<div class="triangle-down"></div>
+					<form method="post" action="{% url 'vote' pokemon.pk %}">{% csrf_token %}
+						<!-- <div class="triangle-up"></div> -->
+						<input type="submit" class="triangle-up" name="vote" value="{{1}}">
+						<div class="rate">{{pokemon.vote}}</div>
+						<div class="triangle-down"></div>
+					</form>
+
 				</div>
 				<div class="pokemon clearfix">
 					<h3>
