@@ -1,12 +1,24 @@
+{% load staticfiles %}
+
 <!doctype html>
 
 <html>
 
 <head>
-
+	<title>Where's The Pokemon?</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/stylesheet.css' %}">
 </head>
 
 <body>
+
+	<div class="main-contents-wrapper clearfix">
+		{% csrf_token %}
+		<div id="title">
+			<h1><a href="{% url 'home' %}">Where's the POKEMON?</a></h1>
+		</div>
+	</div>
+
 
 </body>
 

@@ -1,0 +1,363 @@
+
+/*-------------------------------------------------------------*/
+/* FONTS  */
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,400italic);
+
+/*-------------------------------------------------------------*/
+/* GLOBAL DEFAULTS */
+
+* { 
+  margin:0; padding: 0;
+}
+
+article, aside, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html, body{ 
+  margin: 0; 
+  padding: 0; 
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, 
+cite, code, img, small, strike, strong, em, sub, sup, tt, dd, dl, dt, 
+li, ol, ul, fieldset, form, label, legend, button, table, caption, 
+tbody, tfoot, thead, tr, th, td, section, div, input{ 
+  margin: 0; 
+  padding: 0; 
+  border: 0; 
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-size: 100%; 
+  line-height: 1;
+  text-align: inherit;
+  font-weight: 300;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1; /* IE < 8 */
+}
+
+/*-------------------------------------------------------------*/
+/* INPUT TEXT */
+
+input{
+  display: inline-block;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], textarea{
+  height: 24px;
+  width: 138px;
+  font-size: 14px;
+  background-color: #f8f8f8;
+  border: 1px solid #d0d0d0;
+  padding: 0px 6px;
+  font-weight: 300;
+  line-height: 17px;
+  color: black;
+}
+
+textarea{
+  min-height: 160px;
+  min-width: 400px;
+  resize: none;
+  padding: 6px;
+}
+
+textarea:hover, input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover, input[type="tel"]:hover{
+  border-color: #999;
+}
+
+textarea:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="tel"]:focus{
+  outline: none;
+  border-color: #6C8CD5;
+  background-color: #fdfdfd;
+}
+
+/*-------------------------------------------------------------*/
+/* BUTTONS */
+
+.button, input[type="submit"]{
+  font-weight: 300;
+  margin: 5px;
+  background-color: #e8e8e8;
+  border: 1px solid #d0d0d0;
+  color: #555;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+
+  padding: 0px 12px;
+  height: 26px;
+  line-height: 20px;
+  font-size: 13px;
+  min-width: 80px;
+}
+
+.button:hover, input[type="submit"]:hover{
+  background-color: #eee;
+}
+
+.button:active, input[type="submit"]:active{
+  position: relative;
+  top: 1px;
+}
+
+.button a{
+  text-decoration: none;
+  color: black;
+  line-height: inherit;
+}
+
+input[type="submit"]:focus, button:focus{
+  outline: none;
+}
+
+input[type="submit"]:disabled{
+  color: #a0a0a0;
+  cursor: default;
+}
+
+input[type="submit"]:disabled:hover{
+  background-color: #a60000;
+  color: #a0a0a0;
+  cursor: default;
+}
+
+.following{
+  opacity: 0.5;
+}
+
+/*-------------------------------------------------------------*/
+/* DOC SPECIFIC */
+
+.wrapper{
+  width: 400px;
+  height: 500px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -250px;
+}
+
+.pull-right{
+  float: right;
+}
+
+/*-------------------------------------------------------------*/
+/* GENERAL HEADERS */
+
+h1 {
+  font-size: 38px;
+  font-weight: 300;
+  display: inline;
+  text-align: center;
+}
+
+h2{
+  font-size: 24px;
+}
+
+/*-------------------------------------------------------------*/
+/* LOGIN */
+
+#background{
+  width: inherit;
+  height: inherit;
+}
+
+.login{
+  width: 480px;
+  height: 240px;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  margin-top: -120px;
+  margin-left: -240px;
+  border: 1px solid #a0a0a0;
+}
+
+.login #logo{
+  text-align: center;
+  margin: 40px 120px;
+}
+
+#login form{
+  margin: 30px;
+}
+
+.login input{
+  margin: 5px;
+}
+
+.login .login-message{
+  color: #666;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 11px;
+}
+
+.login .error-true{
+  color: #a60000;
+  font-size: 13px;
+}
+
+.login a{
+  text-align: center;
+  margin-top: 15px;
+  display: block;
+  color: #777;
+}
+
+.login a:hover{
+  color: #bbb;
+}
+
+#register form{
+  margin: 15px;
+}
+
+#register h2{
+  margin: 20px auto;
+  text-align: center;
+}
+
+#register .error{
+  color: #a60000;
+}
+
+.center{
+  text-align: center;
+  margin: 30px;
+}
+
+/*-------------------------------------------------------------*/
+/* MAIN */
+
+#title{
+  text-align: center;
+  padding: 40px;
+  border-bottom: 1px solid #a0a0a0;
+}
+
+.main-contents-wrapper{
+  width: 800px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+}
+
+.main-contents{
+  width: 560px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  float: right;
+}
+
+.side-bar{
+  width: 200px;
+  margin: 0 auto;
+  padding: 0px 0px;
+  float: left;
+}
+
+.side-bar h4{
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.side-bar #other-users{
+  margin: 10px 0px;
+}
+
+.side-bar .user{
+  font-size: 16px;
+  word-wrap: break-word;
+  padding: 5px;
+  background-color: rgba(0,0,255, 0.1);
+  margin: 1px;
+}
+
+.side-bar .me{
+  background-color: rgba(0,255,0, 0.2);  
+}
+
+.main-contents h2{
+  margin-bottom: 10px;
+}
+
+.main-contents .logout{
+  margin-bottom: 30px;
+  color: #a0a0a0;
+}
+
+.main-contents .logout:hover{
+  color: #d0d0d0;
+}
+
+.main-contents form{
+  width: 520px;
+  margin: 20px;
+}
+
+.main-contents form p{
+  margin-bottom: 10px;
+}
+
+.main-contents form textarea{
+  width: 506px;
+  min-height: 40px;
+  background-color: #fff;
+}
+
+.main-contents form input{
+  margin: 5px 0px;
+}
+
+#posts{
+  margin: 20px 0px;
+}
+
+#posts .post{
+  padding-bottom: 30px;
+}
+
+#posts .photo{
+  width: 540px;
+  margin: 10px;
+}
+
+#posts p{
+  font-size: 18px;
+  margin-bottom: 5px;
+  background-color: #f0f0f0;
+  padding: 15px;
+}
+
+#posts h6{
+  font-size: 14px;
+  margin-right: 5px;
+  font-style: italic;
+}
+
