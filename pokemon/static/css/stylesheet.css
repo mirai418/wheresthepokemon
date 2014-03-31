@@ -295,9 +295,10 @@ input[type="checkbox"]:checked + .modal-contents{
 }
 
 .rate{
-  margin: 0px 5px;
-  padding-bottom: 6px;
+  margin: 0px 3px;
+  padding-bottom: 4px;
   font-size: 20px;
+  text-align: center;
 }
 
 @media all and (max-width: 699px){
@@ -322,19 +323,26 @@ input[type="checkbox"]:checked + .modal-contents{
   }
 }
 
-.triangle-up{
+.up input[type="submit"] {
   width: 0px;
   height: 0px;
   border-style: solid;
   border-width: 0 10px 10px 10px;
   border-color: transparent transparent #007bff transparent;
+  background-color: transparent;
   margin-bottom: 5px;
+  min-width: 0px;
+  padding: 0px;
 }
 
-.triangle-down{
+.down input[type="submit"] {
   width: 0px;
   height: 0px;
   border-style: solid;
   border-width: 10px 10px 0 10px;
   border-color: #cc102f transparent transparent transparent;
+  background-color: transparent;
+  margin-bottom: 5px;
+  min-width: 0px;
+  padding: 0px;
 }
