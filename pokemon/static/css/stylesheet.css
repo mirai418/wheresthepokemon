@@ -169,27 +169,79 @@ input[type="submit"]:disabled:hover{
 /* GENERAL HEADERS */
 
 h1 {
-  font-size: 38px;
+  font-size: 50px;
   font-weight: 300;
   display: inline;
-  text-align: center;
+}
+
+@media all and (max-width: 699px){
+
+  h1 {
+    font-size: 24px;
+    font-weight: 300;
+    display: inline;
+  }
 }
 
 h2{
   font-size: 24px;
 }
 
+input[type="checkbox"]{
+  visibility: hidden;
+}
+
+label{
+  margin: 0;
+  padding: 0;
+}
+
+input[type="checkbox"]:checked + .modal-background{
+  visibility: visible;
+}   
+
+input[type="checkbox"]:checked + .modal-contents{
+  visibility: visible;
+} 
+
+.modal-contents{
+  visibility: hidden;
+}
+
+.modal-contents .modal-background{
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  position: fixed; 
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-contents .modal{
+  padding: 20px;
+  z-index: 10;
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  margin-top: -70px;
+  margin-left: -300px;
+  height: 140px;
+  width: 600px;
+  background-color: white;
+}
+
+
+
 /*-------------------------------------------------------------*/
 /* MAIN */
 
 #title{
-  text-align: center;
-  padding: 40px;
+  padding: 20px;
   border-bottom: 1px solid #a0a0a0;
 }
 
 .main-contents-wrapper{
-  width: 800px;
   height: 100%;
   margin: 0 auto;
 }
@@ -201,11 +253,58 @@ h2{
   float: right;
 }
 
-#header{
+#submit{
   margin: 40px;
 }
 
-#header h2{
-  font-size: 48px;
+#submit h2{
+  font-size: 24px;
+  margin: 10px 0px;
 }
+
+#submit input{
+  margin: 4px;
+}
+
+#all-pokemons{
+  margin: 40px 20px;
+}
+
+.pokemon{
+  margin: 30px 0px;
+}
+
+.pokemon h3{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.pokemon p{
+  font-size: 24px;
+  margin: 0px 20px;
+  color: #a60000;
+}
+
+@media all and (max-width: 699px){
+
+  #all-pokemons{
+    margin: 40px 20px;
+  }
+
+  .pokemon{
+    margin: 30px 0px;
+  }
+
+  .pokemon h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .pokemon p{
+    font-size: 16px;
+    margin: 0px 20px;
+    color: #a60000;
+  }
+}
+
 

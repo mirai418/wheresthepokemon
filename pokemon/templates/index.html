@@ -8,6 +8,7 @@
 	<title>Where's The Pokemon?</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/stylesheet.css' %}">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 </head>
 
 <body>
@@ -18,13 +19,36 @@
 			<h1><a href="{% url 'home' %}">Where's the POKEMON?</a></h1>
 		</div>
 
-		<div id="header">
-			<h2>Find Pokemon:</h2><input type="text" placeholder="search!">
-			<h2>Submit Pokemon:</h2>
+		<form id="submit">
+			<h2>Help us out by submitting your own!</h2>
+			<input type="text" placeholder="name">
+			<input type="text" placeholder="link">
+			<input type="submit" value="submit">
+		</form>
+
+		<div id="submit">
+
+			<form>
+
+			</form>
+
 		</div>
 
+		<div id="all-pokemons">
+			{% for pokemon in all_pokemon %}
+
+			<div class="pokemon">
+				<h3>
+					<a href="{{pokemon.link}}">{{pokemon.name}}</a>
+				</h3>
+				<p>
+					Link: <a href="{{pokemon.link}}">{{pokemon.link}}</a>
+				</p>
+			</div>
 
 
+			{% endfor%}
+		</div>
 	</div>
 
 
